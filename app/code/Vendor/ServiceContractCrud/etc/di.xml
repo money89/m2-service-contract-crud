@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Vendor\ServiceContractCrud\Api\ItemRepositoryInterface"
+                type="Vendor\ServiceContractCrud\Model\ItemRepository"/>
+    <preference for="Vendor\ServiceContractCrud\Api\Data\ItemInterface"
+                type="Vendor\ServiceContractCrud\Model\Item"/>
+    <preference for="Vendor\ServiceContractCrud\Api\Data\ItemSearchResultsInterface"
+                type="Vendor\ServiceContractCrud\Model\ItemSearchResults"/>
+</config>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/service-contract-crud/item" method="POST">
+        <service class="Vendor\ServiceContractCrud\Api\ItemRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Vendor_ServiceContractCrud::service_contract_crud"/>
+        </resources>
+    </route>
+
+    <route url="/V1/service-contract-crud/item/:itemId" method="GET">
+        <service class="Vendor\ServiceContractCrud\Api\ItemRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="Vendor_ServiceContractCrud::service_contract_crud"/>
+        </resources>
+    </route>
+
+    <route url="/V1/service-contract-crud/items" method="GET">
+        <service class="Vendor\ServiceContractCrud\Api\ItemRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Vendor_ServiceContractCrud::service_contract_crud"/>
+        </resources>
+    </route>
+
+    <route url="/V1/service-contract-crud/item/:itemId" method="DELETE">
+        <service class="Vendor\ServiceContractCrud\Api\ItemRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Vendor_ServiceContractCrud::service_contract_crud"/>
+        </resources>
+    </route>
+</routes>

@@ -1,0 +1,20 @@
+{
+  "vendor_servicecontractcrud_item": {
+    "column": {
+      "item_id": true,
+      "sku": true,
+      "name": true,
+      "description": true,
+      "is_active": true,
+      "created_at": true,
+      "updated_at": true
+    },
+    "index": {
+      "VENDOR_SERVICECONTRACTCRUD_ITEM_IS_ACTIVE": true
+    },
+    "constraint": {
+      "PRIMARY": true,
+      "VENDOR_SERVICECONTRACTCRUD_ITEM_SKU_UNIQUE": true
+    }
+  }
+}
