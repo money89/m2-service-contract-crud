@@ -11,10 +11,10 @@ interface ItemSearchResultsInterface extends SearchResultsInterface
     /**
      * @return \Vendor\ServiceContractCrud\Api\Data\ItemInterface[]
      */
-    public function getItems(): array;
+    public function getItems();
 
     /**
      * @param \Vendor\ServiceContractCrud\Api\Data\ItemInterface[] $items
      */
-    public function setItems(array $items): ItemSearchResultsInterface;
+    public function setItems(array $items);
 }
